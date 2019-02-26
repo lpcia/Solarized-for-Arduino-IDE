@@ -60,6 +60,7 @@ https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#k
 
 #### Helpful
 http://www.eclipsecolorthemes.org/?view=theme&id=9807
+
 https://en.wikipedia.org/wiki/Solarized_(color_scheme) (Swiped Chart from Here)
 
 #### Interesting Reading:  
