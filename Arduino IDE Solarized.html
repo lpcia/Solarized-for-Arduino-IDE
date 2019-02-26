@@ -1,0 +1,1355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Author" content="Paul Ciarelli">
+  <meta name="Company" content="8222 65th Ave. Kenosh, WI">
+  <meta name="Copyright" content="2018">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Courier; min-height: 12.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Courier}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Courier; min-height: 13.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Courier}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Courier; color: #222222; background-color: #ffffff; min-height: 12.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Courier; color: #222222}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #222222; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Courier New'; color: #222222; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #0645ad; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #222222; background-color: #000000; background-color: rgba(0, 0, 0, 0); min-height: 11.0px}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #222222; min-height: 11.0px}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #222222}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #002b36; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #073642; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #586e75; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #657b83; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #839496; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #93a1a1; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #eee8d5; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #fdf6e3; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #b58900; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #cb4b16; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #dc322f; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #d33682; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #6c71c4; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #268bd2; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #2aa198; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #96a700; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Courier New'; min-height: 12.0px}
+    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; min-height: 11.0px}
+    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Courier New'; color: #222222}
+    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Courier New'; color: #000000}
+    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #002b36}
+    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #073642}
+    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #586e75}
+    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #657b83}
+    p.p39 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #839496}
+    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #c0c0c0}
+    p.p41 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #eee8d5}
+    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #00ccff}
+    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #fdf6e3}
+    p.p44 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #b58900}
+    p.p45 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #cb4b16}
+    p.p46 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #dc322f}
+    p.p47 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #d33682}
+    p.p48 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #6c71c4}
+    p.p49 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #000000; background-color: #000000; background-color: rgba(0, 0, 0, 0)}
+    p.p50 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #000000}
+    p.p51 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #2aa198}
+    p.p52 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #268bd2}
+    p.p53 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #96a700; background-color: #000000; background-color: rgba(0, 0, 0, 0); min-height: 11.0px}
+    p.p54 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #00930a}
+    p.p55 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #00930a; min-height: 11.0px}
+    p.p56 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #000000; min-height: 11.0px}
+    p.p57 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Panic Sans'; min-height: 10.0px}
+    p.p58 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Panic Sans'}
+    p.p59 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Panic Sans'}
+    p.p60 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #021eaa; min-height: 11.0px}
+    p.p61 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Courier New'; color: #222222}
+    p.p62 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Courier New'}
+    p.p63 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Courier New'}
+    p.p64 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Courier New'; color: #ffffff}
+    span.s1 {font: 11.0px Courier}
+    span.s2 {font-kerning: none}
+    span.s3 {font-kerning: none; background-color: #ffffff}
+    span.s4 {font: 10.0px 'Courier New'; font-kerning: none; color: #0645ad; background-color: rgba(0, 0, 0, 0)}
+    span.s5 {font-kerning: none; color: #222222}
+    span.s6 {font-kerning: none; background-color: rgba(0, 0, 0, 0)}
+    span.s7 {font-kerning: none; color: #222222; background-color: rgba(0, 0, 0, 0)}
+    span.s8 {font-kerning: none; color: #839496; background-color: rgba(0, 0, 0, 0)}
+    span.s9 {color: #c0c0c0}
+    span.s10 {color: #00d179}
+    span.s11 {color: #021eaa}
+    span.s12 {font-kerning: none; color: #fff2d5; background-color: rgba(0, 0, 0, 0)}
+    span.s13 {color: #00a6ac}
+    span.s14 {font-kerning: none; color: #000000}
+    span.s15 {color: #dd6900}
+    span.s16 {font-kerning: none; color: #96a700; background-color: rgba(0, 0, 0, 0)}
+    span.s17 {color: #00930a}
+    span.s18 {font: 9.0px 'Panic Sans'}
+    span.s19 {color: #ffffff; background-color: #000000}
+    span.s20 {color: #000000}
+    span.s21 {font-kerning: none; color: #cb4b16; background-color: rgba(0, 0, 0, 0)}
+    span.s22 {font-kerning: none; color: #268bd2; background-color: rgba(0, 0, 0, 0)}
+    span.s23 {color: #d7601b}
+    span.s24 {color: #e5493d}
+    span.s25 {color: #717e00}
+    span.s26 {color: #de5194}
+    span.s27 {color: #ff2600}
+    span.s28 {font-kerning: none; color: #00ccff; background-color: rgba(0, 0, 0, 0)}
+    span.s29 {font-kerning: none; color: #2aa198; background-color: rgba(0, 0, 0, 0)}
+    span.s30 {font-kerning: none; color: #d33682; background-color: rgba(0, 0, 0, 0)}
+    span.s31 {font-kerning: none; color: #6c71c4; background-color: rgba(0, 0, 0, 0)}
+    span.s32 {font-kerning: none; color: #2aa198; background-color: #ffffff}
+    span.s33 {font-kerning: none; color: #dc322f; background-color: rgba(0, 0, 0, 0)}
+    span.s34 {color: #2aa198}
+    span.s35 {font-kerning: none; color: #b58900; background-color: rgba(0, 0, 0, 0)}
+    span.s36 {color: #546267}
+    span.s37 {color: #a5b4b5}
+    span.s38 {font: 11.0px Helvetica; font-kerning: none; color: #d35400}
+    span.s39 {font: 11.0px Helvetica; font-kerning: none; color: #00979d}
+    span.s40 {font: 11.0px Helvetica; font-kerning: none; color: #728e00}
+    span.s41 {color: #d35400}
+    span.s42 {color: #728e00}
+    span.s43 {color: #00979d}
+    span.s44 {color: #849d00}
+    span.s45 {color: #b7291d}
+    span.s46 {color: #002e31}
+    span.s47 {color: #08afb4}
+    span.s48 {background-color: #000000}
+    span.s49 {color: #eb6200}
+    span.s50 {color: #f5c000}
+    span.s51 {color: #006d6e}
+    span.s52 {color: #008f94}
+    span.s53 {color: #f1f1f1; background-color: rgba(0, 0, 0, 0)}
+    span.s54 {color: #ffffff; background-color: rgba(0, 0, 0, 0)}
+    span.s55 {color: #00767b}
+    span.s56 {color: #f3f3f3}
+    span.s57 {color: #000000; background-color: rgba(0, 0, 0, 0)}
+    span.s58 {color: #0433ff}
+    span.s59 {color: #00a500}
+    span.s60 {color: #ffa900}
+    span.s61 {color: #d834d6}
+    span.s62 {color: #797979}
+    span.s63 {color: #00d5ff}
+    span.s64 {color: #e8e8e8}
+    span.s65 {color: #424100}
+    span.s66 {color: #d2dbe3}
+    span.s67 {color: #ffd300}
+    span.s68 {color: #919191}
+    span.s69 {color: #a9a9a9}
+    span.s70 {color: #007aaa}
+    span.s71 {color: #f95b45}
+    span.Apple-tab-span {white-space:pre}
+    table.t1 {background-color: #f8f9fa; margin: 14.0px 0.0px 14.0px 0.0px; border-style: solid; border-width: 1.1px 1.1px 1.1px 1.1px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; border-collapse: collapse}
+    td.td1 {width: 38.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td2 {width: 140.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td3 {width: 232.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td4 {width: 45.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td5 {width: 46.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td6 {width: 182.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td7 {width: 38.0px; height: 3.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td8 {width: 138.0px; height: 3.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td9 {width: 230.0px; height: 3.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td10 {width: 43.0px; height: 3.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td11 {width: 44.0px; height: 3.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td12 {width: 180.0px; height: 3.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td13 {width: 38.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td14 {width: 38.0px; background-color: #002b36; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td15 {width: 138.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td16 {width: 230.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td17 {width: 43.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td18 {width: 44.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td19 {width: 180.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td20 {width: 38.0px; background-color: #073642; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td21 {width: 38.0px; background-color: #586e75; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td22 {width: 38.0px; background-color: #657b83; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td23 {width: 38.0px; background-color: #839496; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td24 {width: 38.0px; background-color: #93a1a1; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td25 {width: 38.0px; background-color: #eee8d5; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td26 {width: 38.0px; background-color: #fdf6e3; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td27 {width: 38.0px; background-color: #b58900; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td28 {width: 38.0px; background-color: #cb4b16; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td29 {width: 38.0px; background-color: #dc322f; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td30 {width: 38.0px; background-color: #d33682; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td31 {width: 38.0px; background-color: #6c71c4; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td32 {width: 38.0px; background-color: #268bd2; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td33 {width: 38.0px; background-color: #2aa198; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td34 {width: 38.0px; background-color: #859900; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td35 {width: 44.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td36 {width: 37.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td37 {width: 132.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td38 {width: 38.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td39 {width: 183.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td40 {width: 44.0px; height: 2.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td41 {width: 37.0px; height: 2.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td42 {width: 130.0px; height: 2.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td43 {width: 230.0px; height: 2.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td44 {width: 36.0px; height: 2.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td45 {width: 181.0px; height: 2.0px; background-color: #eaecf0; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td46 {width: 37.0px; background-color: #002b36; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td47 {width: 130.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td48 {width: 36.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td49 {width: 44.0px; background-color: #fdf6e3; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td50 {width: 181.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td51 {width: 37.0px; background-color: #073642; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td52 {width: 37.0px; background-color: #586e75; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td53 {width: 37.0px; background-color: #657b83; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td54 {width: 44.0px; height: 11.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td55 {width: 37.0px; height: 11.0px; background-color: #839496; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td56 {width: 130.0px; height: 11.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td57 {width: 230.0px; height: 11.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td58 {width: 36.0px; height: 11.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td59 {width: 44.0px; height: 11.0px; background-color: #fdf6e3; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td60 {width: 181.0px; height: 11.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td61 {width: 37.0px; background-color: #93a1a1; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td62 {width: 37.0px; background-color: #eee8d5; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td63 {width: 37.0px; background-color: #fdf6e3; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td64 {width: 44.0px; background-color: #073642; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td65 {width: 37.0px; background-color: #b58900; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td66 {width: 37.0px; background-color: #cb4b16; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td67 {width: 37.0px; background-color: #dc322f; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td68 {width: 37.0px; background-color: #d33682; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td69 {width: 37.0px; background-color: #6c71c4; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td70 {width: 37.0px; background-color: #268bd2; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td71 {width: 44.0px; height: 10.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td72 {width: 37.0px; height: 10.9px; background-color: #2aa198; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td73 {width: 130.0px; height: 10.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td74 {width: 230.0px; height: 10.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td75 {width: 36.0px; height: 10.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td76 {width: 44.0px; height: 10.9px; background-color: #fdf6e3; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td77 {width: 181.0px; height: 10.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td78 {width: 37.0px; background-color: #859900; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+    td.td79 {width: 230.0px; background-color: #f8f9fa; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #a2a9b1 #a2a9b1 #a2a9b1 #a2a9b1; padding: 2.8px 5.6px 2.8px 5.6px}
+  </style>
+</head>
+<body>
+<p class="p1">Arduino IDE Solarized!!!<span class="s1"> <span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><br></p>
+<p class="p3">Keywords from someone’s library should not be colorized the same as the IDE’s Colors</p>
+<p class="p3">I may not even be using that library, but I have to live with those colors nonetheless. I can’t change every library, but I can make the existing ones special (YIKES) <span class="Apple-converted-space">  </span>When the going gets weird, the weird turn pro!</p>
+<p class="p4"><br></p>
+<p class="p1">Official Documentation</p>
+<p class="p5">https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#keywords</p>
+<p class="p4"><br></p>
+<p class="p5">Helpful</p>
+<p class="p5"><span class="Apple-tab-span">	</span>http://www.eclipsecolorthemes.org/?view=theme&amp;id=9807</p>
+<p class="p5"><span class="Apple-tab-span">	</span>https://en.wikipedia.org/wiki/Solarized_(color_scheme) (Swiped Chart from Here)</p>
+<p class="p6"><span class="s2"></span><br></p>
+<p class="p5">Interesting Reading: <span class="Apple-converted-space"> </span></p>
+<p class="p5"><span class="Apple-tab-span">	</span>A case against Syntax Highlighting: http://www.linusakesson.net/programming/syntaxhighlighting/</p>
+<p class="p6"><span class="s2"></span><br></p>
+<p class="p5">// Solarized Dark Color Roles =================================================================================</p>
+<p class="p7"><span class="s3">// I gave you folks that like dark side of the force a decent head start.<span class="Apple-converted-space">  </span>You should only have to make 2 or 3 changes to the light theme, and maybe fool around with bold vs. plain.<span class="Apple-converted-space">  </span>Possibly just change the background, but what would be the fun in that.</span></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s2">Name</span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s2">Swatch</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p9"><span class="s2">Suggested Role for Dark Background</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p9"><span class="s2">Arduino IDE</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p9"><span class="s2">Line to Change</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p10"><span class="s2"><a href="https://en.wikipedia.org/wiki/SRGB">sRGB<span class="s4"></span></a></span></p>
+      </td>
+      <td valign="middle" class="td6">
+        <p class="p8"><span class="s2">Notes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td7">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td8">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td9">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td10">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td11">
+        <p class="p8"><span class="s2">Hex</span></p>
+      </td>
+      <td valign="middle" class="td12">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Base03</span></p>
+      </td>
+      <td valign="middle" class="td14">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p14">background</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p15"><span class="s5">#</span><span class="s2">002b36</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Base02</span></p>
+      </td>
+      <td valign="middle" class="td20">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p16"><span class="s5">#</span><span class="s2">073642</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Base01</span></p>
+      </td>
+      <td valign="middle" class="td21">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p14">comments / secondary content</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p17"><span class="s5">#</span><span class="s2">586e75</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Base00</span></p>
+      </td>
+      <td valign="middle" class="td22">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p18"><span class="s5">#</span><span class="s2">657b83</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p8"><span class="s2">Base0</span></p>
+      </td>
+      <td valign="middle" class="td23">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p11"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p19"><span class="s5">#</span><span class="s2">839496</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Base1</span></p>
+      </td>
+      <td valign="middle" class="td24">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p14">body text / default code / primary content</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p20"><span class="s5">#</span><span class="s2">93a1a1</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Base2</span></p>
+      </td>
+      <td valign="middle" class="td25">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p21"><span class="s5">#</span><span class="s2">eee8d5</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Base3</span></p>
+      </td>
+      <td valign="middle" class="td26">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p22"><span class="s5">#</span><span class="s2">fdf6e3</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Yellow</span></p>
+      </td>
+      <td valign="middle" class="td27">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p23"><span class="s5">#</span><span class="s2">b58900</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Orange</span></p>
+      </td>
+      <td valign="middle" class="td28">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p14">constants</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p24"><span class="s5">#</span><span class="s2">cb4b16</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Red</span></p>
+      </td>
+      <td valign="middle" class="td29">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p14">regex, special keywords</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p25"><span class="s5">#</span><span class="s2">dc322f</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Magenta</span></p>
+      </td>
+      <td valign="middle" class="td30">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p26"><span class="s5">#</span><span class="s2">d33682</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Violet</span></p>
+      </td>
+      <td valign="middle" class="td31">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p27"><span class="s5">#</span><span class="s2">6c71c4</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Blue</span></p>
+      </td>
+      <td valign="middle" class="td32">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p14">reserved keywords</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p28"><span class="s5">#</span><span class="s2">268bd2</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Cyan</span></p>
+      </td>
+      <td valign="middle" class="td33">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p14">strings, numbers</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p29"><span class="s5">#</span><span class="s2">2aa198</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p13"><span class="s3">Green</span></p>
+      </td>
+      <td valign="middle" class="td34">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td15">
+        <p class="p14">operators, other keywords</p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td17">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td18">
+        <p class="p30"><span class="s5">#</span><span class="s2">859900</span></p>
+      </td>
+      <td valign="middle" class="td19">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p31"><br></p>
+<p class="p32"><br></p>
+<p class="p14">// Solarized Light Color Roles =================================================================================</p>
+<p class="p13"><span class="s3"><b>// (Chart from https://en.wikipedia.org/wiki/Solarized_(color_scheme)</b></span></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td35">
+        <p class="p33"><span class="s2">Name</span></p>
+      </td>
+      <td valign="middle" class="td36">
+        <p class="p33"><span class="s2">Swatch</span></p>
+      </td>
+      <td valign="middle" class="td37">
+        <p class="p33"><span class="s2">Suggested Role for Light Background</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p33"><span class="s2">Arduino IDE</span></p>
+      </td>
+      <td valign="middle" class="td38">
+        <p class="p33"><span class="s2">Line to Change</span></p>
+      </td>
+      <td valign="middle" class="td5">
+        <p class="p34"><span class="s6">sRGB</span></p>
+      </td>
+      <td valign="middle" class="td39">
+        <p class="p13"><span class="s6">Notes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td40">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td41">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td42">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td43">
+        <p class="p13"><span class="s2">Changed roles a bit to coincide with existing Arduino IDE colors</span></p>
+      </td>
+      <td valign="middle" class="td44">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td40">
+        <p class="p9"><span class="s2">Hex</span></p>
+      </td>
+      <td valign="middle" class="td45">
+        <p class="p13"><span class="s2">my colors don’t start with #</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Base03</span></p>
+      </td>
+      <td valign="middle" class="td46">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p35"><span class="s7">#</span><span class="s6">002b36</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Base02</span></p>
+      </td>
+      <td valign="middle" class="td51">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p36"><span class="s7">#</span><span class="s6">073642</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Base01</span></p>
+      </td>
+      <td valign="middle" class="td52">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td47">
+        <p class="p14">body text / default code / primary content</p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p14">fgcolor</p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">61</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p37"><span class="s7">#</span><span class="s6">586e75</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Base00</span></p>
+      </td>
+      <td valign="middle" class="td53">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p38"><span class="s7">#</span><span class="s6">657b83</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td54">
+        <p class="p13"><span class="s3">Base0</span></p>
+      </td>
+      <td valign="middle" class="td55">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td56">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td57">
+        <p class="p13"><span class="s2">comment1</span></p>
+      </td>
+      <td valign="top" class="td58">
+        <p class="p13"><span class="s2">128<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="top" class="td59">
+        <p class="p19"><span class="s5">#</span><span class="s2">839496</span></p>
+        <p class="p39"><span class="s6">A9A9A9</span></p>
+      </td>
+      <td valign="top" class="td60">
+        <p class="p13"><span class="s2">Didn’t like, changed to </span><span class="s8">A9A9A9</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Base1</span></p>
+      </td>
+      <td valign="middle" class="td61">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p14">comments / secondary content</p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p13"><span class="s2">comment2</span></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">129</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p20"><span class="s5">#</span><span class="s2">93a1a1</span></p>
+        <p class="p40">C0C0C0</p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p13"><span class="s2">Didn’t like, changed to </span><span class="s9">C0C0C0</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Base2</span></p>
+      </td>
+      <td valign="middle" class="td62">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td16">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p41"><span class="s7">#</span><span class="s6">eee8d5</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p13"><span class="s2">Other possible colors:</span></p>
+        <p class="p42"><span class="s10">00cc66</span><span class="s5"> </span><span class="s6">00ccff </span><span class="s11">000099</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Base3</span></p>
+      </td>
+      <td valign="middle" class="td63">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p14">background</p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p13"><span class="s2">bgcolor</span></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">62</span></p>
+      </td>
+      <td valign="top" class="td64">
+        <p class="p43"><span class="s12">#</span><span class="s6">fdf6e3</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p13"><span class="s2">Dark BKG used for clarity</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Yellow</span></p>
+      </td>
+      <td valign="middle" class="td65">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p14">preprocessor</p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">113</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p44"><span class="s7">#</span><span class="s6">b58900</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Orange</span></p>
+      </td>
+      <td valign="middle" class="td66">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p14">constants</p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p14">function<span class="Apple-converted-space"> </span></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">98</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p45"><span class="s7">#</span><span class="s6">cb4b16</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Red</span></p>
+      </td>
+      <td valign="middle" class="td67">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p14">regex, special keywords</p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p14">Literlals: literal_string_ double_quote</p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">112</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p46"><span class="s7">#</span><span class="s6">dc322f</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p13"><span class="s2">strings in double quotes<span class="Apple-converted-space"> </span></span></p>
+        <p class="p13"><span class="s2">“String”</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Magenta</span></p>
+      </td>
+      <td valign="middle" class="td68">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p14">literal_boolean<span class="Apple-converted-space"> </span></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">110</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p47"><span class="s7">#</span><span class="s6">d33682</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p14">true false</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Violet</span></p>
+      </td>
+      <td valign="middle" class="td69">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p14">literal_char</p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">111</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p48"><span class="s7">#</span><span class="s6">6c71c4<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p49"><span class="s2">C/C++ character constants</span></p>
+        <p class="p50"><span class="s6">'a' '\n' '\13'<span class="Apple-converted-space">  </span>for example</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Blue</span></p>
+      </td>
+      <td valign="middle" class="td70">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p14">reserved keywords</p>
+      </td>
+      <td valign="top" class="td16">
+        <p class="p14">Variables: reserved_word_2 (constants)<span class="Apple-converted-space"> </span></p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">109</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p51"><span class="s7">#</span><span class="s6">2aa198</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td71">
+        <p class="p13"><span class="s3">Cyan</span></p>
+      </td>
+      <td valign="middle" class="td72">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td73">
+        <p class="p14">strings, numbers</p>
+      </td>
+      <td valign="top" class="td74">
+        <p class="p14">Variables: data_type (data types)</p>
+      </td>
+      <td valign="top" class="td75">
+        <p class="p13"><span class="s2">94</span></p>
+      </td>
+      <td valign="top" class="td76">
+        <p class="p52"><span class="s7">#</span><span class="s6">268bd2</span></p>
+      </td>
+      <td valign="top" class="td77">
+        <p class="p12"><span class="s13"><span class="Apple-converted-space"> </span></span><span class="s6"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p13"><span class="s3">Green</span></p>
+      </td>
+      <td valign="middle" class="td78">
+        <p class="p12"><span class="s2"></span><br></p>
+      </td>
+      <td valign="middle" class="td47">
+        <p class="p14">operators, other keywords</p>
+      </td>
+      <td valign="top" class="td79">
+        <p class="p14"><span class="s5">Structures: </span>reserved_word</p>
+        <p class="p32"><br></p>
+        <p class="p14">operator</p>
+        <p class="p14">variable</p>
+      </td>
+      <td valign="top" class="td48">
+        <p class="p13"><span class="s2">102</span></p>
+        <p class="p12"><span class="s2"></span><br></p>
+        <p class="p13"><span class="s2">119</span></p>
+        <p class="p13"><span class="s2">108</span></p>
+      </td>
+      <td valign="top" class="td49">
+        <p class="p30"><span class="s14">#</span><span class="s2">859900</span></p>
+        <p class="p53"><span class="s2"></span><br></p>
+        <p class="p54">00840B</p>
+        <p class="p42"><span class="s6">00ccff</span></p>
+      </td>
+      <td valign="top" class="td50">
+        <p class="p55"><br></p>
+        <p class="p50"><span class="s6">(Needed two more colors!)</span></p>
+        <p class="p49"><span class="s2">Operators +, -, etc<span class="Apple-converted-space"> </span></span></p>
+        <p class="p50"><span class="s2">Maybe it will show up someday</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p32"><br></p>
+<p class="p32"><br></p>
+<p class="p50">FUNCTIONS<span class="Apple-tab-span">	</span><span class="s15">d35400</span><span class="s13"> </span>For controlling the Arduino board and performing computations.</p>
+<p class="p50">VARIABLES<span class="Apple-tab-span">	</span><span class="s13">00979C </span>Arduino data types and constants. (Methods)</p>
+<p class="p50">STRUCTURE<span class="Apple-tab-span">	</span><span class="s16">859900</span> The elements of Arduino (C++) code.<span class="Apple-converted-space">  </span>Preprocessor /<span class="Apple-converted-space"> </span></p>
+<p class="p56"><br></p>
+<p class="p50">reserved_word<span class="s5"><span class="Apple-converted-space">  </span>102</span></p>
+<p class="p14">reserved_word_2<span class="Apple-converted-space">  </span>109</p>
+<p class="p14">function</p>
+<p class="p57"><br></p>
+<p class="p14">operator <span class="s5">119 </span><span class="s17">00840B<span class="Apple-converted-space"> </span></span></p>
+<p class="p57"><br></p>
+<p class="p58">These are the only lines changed in /Applications/Arduino.app/Contents/Java/lib/theme.txt (Macintosh) as of Arduino v1.8.8</p>
+<p class="p57"><br></p>
+<p class="p59"><span class="s18"><span class="Apple-converted-space"> </span></span><b>Original Colors <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>Solarized<span class="Apple-tab-span">	</span>Notes</b></p>
+<p class="p14"><span class="s18"><span class="Apple-converted-space"> </span></span>60 # foreground and background colors<span class="Apple-converted-space"> </span></p>
+<p class="p14"><span class="Apple-converted-space"> </span>61 editor.fgcolor = #000000<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// 586e75</p>
+<p class="p14"><span class="Apple-converted-space"> </span>62 editor.bgcolor = #<span class="s19">ffffff - White </span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// fdf6e3</p>
+<p class="p32"><br></p>
+<p class="p14"><span class="Apple-converted-space"> </span>92 # FUNCTIONS <span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p50"><span class="s20"><span class="Apple-converted-space"> </span>93 editor.keyword1.style = #</span><span class="s15">d35400</span><span class="s20">,bold<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// xxxxxx</span><span class="s21"><span class="Apple-tab-span">	</span></span>*keyword1 is the same as data_type (changes are meaningless)</p>
+<p class="p14"><span class="Apple-converted-space"> </span>94 editor.data_type.style = #<span class="s15">d35400</span>,bold <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s22">268bd2</span></p>
+<p class="p14"><span class="Apple-converted-space"> </span>95<span class="Apple-converted-space"> </span></p>
+<p class="p14"><span class="Apple-converted-space"> </span>96 # METHODS <span class="Apple-converted-space">   <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p50"><span class="s20"><span class="Apple-converted-space"> </span>97 editor.keyword2.style = #</span><span class="s15">D35400</span><span class="s20">,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// xxxxxx</span><span class="s23"><span class="Apple-tab-span">	</span></span>*keyword2 is the same as function<span class="Apple-converted-space">  </span>(changes are meaningless)</p>
+<p class="p14"><span class="Apple-converted-space"> </span>98 editor.function.style = #<span class="s15">d35400</span>,plain <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s21">cb4b16</span><span class="s24"><span class="Apple-tab-span">	</span></span><span class="s20">(Methods and Functions)</span></p>
+<p class="p14"><span class="Apple-converted-space"> </span>99<span class="Apple-converted-space"> </span></p>
+<p class="p14">100 # STRUCTURES <span class="Apple-converted-space">   <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p50"><span class="s20">101 editor.keyword3.style = #</span><span class="s25">5E6D03</span><span class="s20">,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// xxxxxx</span><span class="s26"><span class="Apple-tab-span">	</span></span>keyword3 is the same as <span class="s27">function!</span> (changes are meaningless)</p>
+<p class="p14">102 editor.reserved_word.style = #<span class="s25">5E6D03</span>,plain <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s16">859900<span class="Apple-tab-span">	</span> C/C++ control structures: if else case</span></p>
+<p class="p14">103<span class="Apple-converted-space"> </span></p>
+<p class="p14">104<span class="Apple-converted-space"> </span></p>
+<p class="p14">105 # TEXT - LITERALS</p>
+<p class="p50"><span class="s20">106 editor.literal1.style = #</span><span class="s13">00979C</span><span class="s20">,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// xxxxxx</span><span class="Apple-tab-span">	</span>*literal1 same as reserved_word_2 (changes are meaningless)</p>
+<p class="p50"><span class="s20">107 editor.literal2.style = #</span><span class="s13">00979C</span><span class="s20">,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// </span>xxxxxx<span class="Apple-tab-span">	</span>literal2 is the same as <span class="s27">function</span> (changes are meaningless)</p>
+<p class="p50"><span class="s20">108 editor.variable.style = #</span><span class="s13">00979C</span><span class="s20">,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// </span><span class="s28">00ccff</span><span class="Apple-tab-span">	</span>Works in testing but I never saw it do anything<span class="Apple-converted-space"> </span></p>
+<p class="p14">109 editor.reserved_word_2.style = #<span class="s13">00979C</span>,plain <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s29">2aa198</span><span class="Apple-tab-span">	</span><span class="s20">Constants</span></p>
+<p class="p14">110 editor.literal_boolean.style = #<span class="s13">00979C</span>,plain <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s30">d33682</span><span class="Apple-tab-span">	</span><span class="s20">True and False Only!</span></p>
+<p class="p50"><span class="s20">111 editor.literal_char.style = #</span><span class="s13">00979C</span><span class="s20">,plain <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// </span><span class="s31">6c71c4</span><span class="s32"><span class="Apple-tab-span">	</span></span><span class="s3">C/C++ character constants: <span class="Apple-converted-space">  </span>'a' '\n' '\13'<span class="Apple-converted-space">  </span>for example</span></p>
+<p class="p14">112 editor.literal_string_double_quote.style = <span class="s20">#005C5F,pl</span>ain// <span class="s33">dc322f</span><span class="s34"><span class="Apple-tab-span">	</span></span><span class="s20">"</span><span class="s27">Double Quoted Strings:</span><span class="s20">"</span></p>
+<p class="p14">113 editor.preprocessor.style = #<span class="s25">5E6D03</span>,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s35">b58900</span><span class="Apple-tab-span">	</span>Commands typically starting with #</p>
+<p class="p32"><br></p>
+<p class="p14">115 # http://www.arduino.cc/</p>
+<p class="p14">116 editor.url.style = #0000ff,underlined<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// xxxxxx<span class="Apple-tab-span">	</span>Color for URL’s</p>
+<p class="p32"><br></p>
+<p class="p14">119 editor.operator.style = #<span class="s36">434f54</span>,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s17">00840B</span><span class="Apple-tab-span">	</span>Operators</p>
+<p class="p56"><br></p>
+<p class="p50">122 # ?? maybe this is for words followed by a colon</p>
+<p class="p50">123 # like in case statements or goto</p>
+<p class="p50">124 editor.label.style = #7e7e7e,bold<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// xxxxxx<span class="Apple-tab-span">	</span>I never saw it do anything during testing or otherwise</p>
+<p class="p60"><br></p>
+<p class="p14">128 editor.comment1.style = #<span class="s36">434F54</span>,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s8">A9A9A9</span></p>
+<p class="p14">129 editor.comment2.style = #<span class="s37">95a5a6</span>,plain<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>// <span class="s9">C0C0C0</span></p>
+<p class="p32"><br></p>
+<p class="p14">* Denotes Fields suggested for Developers in their keywords.txt</p>
+<p class="p32"><br></p>
+<p class="p61"><span class="s3"><b>Arduino Colors: Functions: </b></span><span class="s38">digitalRead() </span><span class="s3"><b>Variables </b></span><span class="s39">Floating Point Constants </span><span class="s3"><b>Structure </b></span><span class="s40">loop()<span class="Apple-converted-space"> </span></span></p>
+<p class="p14">#FUNCTIONS COLOR <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>#D35400 - ORANGE<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>KEYWORD1 (<span class="s41">data_type</span><span class="s20">)</span></p>
+<p class="p14">#FUNCTIONS COLOR<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>#D35400 - ORANGE<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>KEYWORD2 (<span class="s41">function</span>)</p>
+<p class="p14">#STRUCTURE COLORS <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>#728E00 - GREEN<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>KEYWORD3 (<span class="s42">reserved_word</span>)</p>
+<p class="p14">#VARIABLES COLOR <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>#00979C - BLUE<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>LITERAL1 <span class="s43">(reserved_word2)</span></p>
+<p class="p32"><br></p>
+<p class="p32"><br></p>
+<p class="p62"><b>TESTING</b></p>
+<p class="p14">The following lines were pasted into both keywords.txt (in the application package) and into a blank sketch for testing</p>
+<p class="p14">It’s probably not good to update the file while the Arduino application is running.</p>
+<p class="p32"><br></p>
+<p class="p14"># Test Area<span class="Apple-converted-space">    </span>TEXT - KEYWORDS<span class="Apple-converted-space"> </span></p>
+<p class="p14">#<span class="Apple-tab-span">	</span>Paste this section into a sketch to see results</p>
+<p class="p32"><br></p>
+<p class="p14">abtA2<span class="Apple-tab-span">	</span>KEYWORD1<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>DATA_TYPE</p>
+<p class="p14">abtB2<span class="Apple-tab-span">	</span>KEYWORD2<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>FUNCTION</p>
+<p class="p14">abtC2<span class="Apple-tab-span">	</span>KEYWORD3<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>RESERVED_WORD</p>
+<p class="p14">#<span class="Apple-converted-space">  </span>C/C++ structures: if else case<span class="Apple-converted-space">  </span>etc</p>
+<p class="p14">abtC3<span class="Apple-tab-span">	</span>KEYWORD3<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>PREPROCESSOR</p>
+<p class="p14">abtD2<span class="Apple-tab-span">	</span>LITERAL1<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>RESERVED_WORD_2</p>
+<p class="p14">abtD3<span class="Apple-tab-span">	</span>LITERAL1<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>LITERAL_BOOLEAN</p>
+<p class="p14">abtM3<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>VARIABLE</p>
+<p class="p14">abtP<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>OPERATOR</p>
+<p class="p14">abtL<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>LITERAL_CHAR</p>
+<p class="p14"># C/C++ character constants: <span class="Apple-converted-space">  </span>'a' '\n' '\13'<span class="Apple-converted-space">  </span>for example</p>
+<p class="p32"><br></p>
+<p class="p14">abtN<span class="Apple-converted-space">      </span>LITERAL_STRING_DOUBLE_QUOTE</p>
+<p class="p14">#<span class="Apple-converted-space">  </span>"Double Quoted Strings: "</p>
+<p class="p14">abtO<span class="Apple-converted-space">      </span>URL</p>
+<p class="p14"># <span class="Apple-converted-space">  </span>URLs:<span class="Apple-converted-space">  </span>http://www.arduino.cc</p>
+<p class="p14">abtQ<span class="Apple-converted-space">      </span>LABEL</p>
+<p class="p14">#<span class="Apple-tab-span">	</span>Unknown:</p>
+<p class="p32"><br></p>
+<p class="p14"># The following were superceeded by the keyword in the 4th tab (see official doc)</p>
+<p class="p14"># <span class="Apple-converted-space">  </span>https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#keywords</p>
+<p class="p14">abtA1<span class="Apple-tab-span">	</span>KEYWORD1</p>
+<p class="p14">#<span class="Apple-tab-span">	</span>KEYWORD1 Same as DATA_TYPE</p>
+<p class="p14">abtB1<span class="Apple-tab-span">	</span>KEYWORD2</p>
+<p class="p14">#<span class="Apple-tab-span">	</span>KEYWORD2 Same as FUNCTION</p>
+<p class="p14">abtC1<span class="Apple-tab-span">	</span>KEYWORD3</p>
+<p class="p14">#<span class="Apple-tab-span">	</span>KEYWORD3 Same as FUNCTION</p>
+<p class="p14">abtD1<span class="Apple-tab-span">	</span>LITERAL1</p>
+<p class="p14"># <span class="Apple-converted-space">  </span>LITERAL1 Same as RESERVED_WORD_2</p>
+<p class="p32"><br></p>
+<p class="p14"># LITERAL2 looks like a bust but it is the same as FUNCTION (oddly) instead of not being colorized at all.</p>
+<p class="p14">abtE1<span class="Apple-tab-span">	</span>LITERAL2</p>
+<p class="p14">abtE2<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>LITERAL2</p>
+<p class="p14">abtE3<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>LITERAL2</p>
+<p class="p14">abtE4<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>LITERAL2</p>
+<p class="p14">abtE5<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>LITERAL2</p>
+<p class="p14">abtE6 LITERAL2</p>
+<p class="p14"># Note:<span class="Apple-converted-space">  </span>The 3rd tab is used as a pointer back to the Arduino Language Reference page.</p>
+<p class="p14"># END Test Area<span class="Apple-converted-space">    </span>TEXT - KEYWORDS</p>
+<p class="p32"><br></p>
+<p class="p32"><br></p>
+<p class="p63"><b>/Applications/Arduino.app/Contents/Java/lib/theme.txt (Macintosh)<span class="Apple-converted-space">  </span>- Colorized Original Colors</b></p>
+<p class="p14">// Current as of Feb 21, 2019 <span class="Apple-converted-space">  </span>NOTE: THIS FILE WILL NOT WORK Do not replace anything with this section</p>
+<p class="p32"><br></p>
+<p class="p14">#FUNCTIONS COLOR <span class="Apple-tab-span">	</span>#<span class="s15">D35400</span> - ORANGE<span class="Apple-tab-span">	</span>KEYWORD1<span class="Apple-tab-span">	</span>Data_Type</p>
+<p class="p14">#FUNCTIONS COLOR<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>#<span class="s15">D35400</span> - ORANGE<span class="Apple-tab-span">	</span>KEYWORD2<span class="Apple-tab-span">	</span>Methods and Functions</p>
+<p class="p14">#STRUCTURE COLORS <span class="Apple-tab-span">	</span>#<span class="s44">728E00</span> - GREEN<span class="Apple-tab-span">	</span>KEYWORD3<span class="Apple-tab-span">	</span>Structures / RESERVED_WORD / PREPROSESSOR</p>
+<p class="p14">#CONSTANTS COLOR <span class="Apple-tab-span">	</span>#<span class="s13">00979C</span> - BLUE<span class="Apple-tab-span">	</span>LITERAL1<span class="Apple-tab-span">	</span>Constants</p>
+<p class="p14">#VARIABLES COLOR <span class="Apple-tab-span">	</span>#<span class="s13">00979C</span> - BLUE<span class="Apple-tab-span">	</span>LITERAL2<span class="Apple-tab-span">	</span>Not used! Possibly Change those not marked constant in keywords.txt????</p>
+<p class="p32"><br></p>
+<p class="p14">#ERROR COLOR<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>#<span class="s45">A61717</span> - RED<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p14">#COMMENTS // COLOR<span class="Apple-tab-span">	</span>#<span class="s37">95A5A6</span> - LIGHT GREY<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p14">#COMMENTS /**/ COLOR<span class="Apple-tab-span">	</span>#<span class="s36">434F54</span> - DARK GREY<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p14"># GUI - STATUS</p>
+<p class="p14">status.notice.fgcolor = #<span class="s46">002325</span></p>
+<p class="p14">status.notice.bgcolor = #<span class="s47">17A1A5</span></p>
+<p class="p64"><span class="s20">status.error.fgcolor = #</span><span class="s48">ffffff - White - Bacground added for clarity</span></p>
+<p class="p14">status.error.bgcolor = #<span class="s49">E34C00</span></p>
+<p class="p14">status.edit.fgcolor = #<span class="s20">000000</span></p>
+<p class="p14">status.edit.bgcolor = #<span class="s50">F1B500</span></p>
+<p class="p14">status.font = SansSerif,plain,12</p>
+<p class="p32"><br></p>
+<p class="p14"># GUI - TABS</p>
+<p class="p14"># (tab images are stored in the lib/theme folder)</p>
+<p class="p14">header.bgcolor = #<span class="s47">17A1A5</span></p>
+<p class="p14">header.text.selected.color = #<span class="s51">005B5B</span></p>
+<p class="p14">header.text.unselected.color = #<span class="s52">007e82</span></p>
+<p class="p14">header.text.font = SansSerif,plain,12</p>
+<p class="p32"><br></p>
+<p class="p14"># GUI - CONSOLE</p>
+<p class="p14">console.font = Monospaced,plain,11</p>
+<p class="p14">console.font.macosx = Monaco,plain,10</p>
+<p class="p14">console.color = #<span class="s20">000000</span></p>
+<p class="p14">console.output.color = #<span class="s53">eeeeee</span><span class="s54"> </span><span class="s19">- Very dim Grey<span class="Apple-converted-space"> </span></span></p>
+<p class="p14">console.error.color = #<span class="s49">E34C00</span></p>
+<p class="p32"><br></p>
+<p class="p14"># GUI - BUTTONS</p>
+<p class="p14">buttons.bgcolor = #<span class="s55">006468</span></p>
+<p class="p14">buttons.status.font = SansSerif,plain,12</p>
+<p class="p64"><span class="s20">buttons.status.color = #</span><span class="s48">ffffff - White - Bacground added for clarity</span></p>
+<p class="p32"><br></p>
+<p class="p14"># GUI - PLOTTING<span class="Apple-converted-space">  </span>- color cycle created via colorbrewer2.org <span class="Apple-converted-space"> </span></p>
+<p class="p64"><span class="s20">plotting.bgcolor = #</span><span class="s48">ffffff - White - Bacground added for clarity</span></p>
+<p class="p64"><span class="s20">plotting.color = #</span><span class="s48">ffffff - White - Bacground added for clarity</span></p>
+<p class="p14">plotting.gridcolor = #<span class="s56">f0f0f0</span><span class="s57"> - Very dim Grey</span></p>
+<p class="p14">plotting.boundscolor = #000000</p>
+<p class="p14">plotting.graphcolor.size = 8</p>
+<p class="p14">plotting.graphcolor.00 = #<span class="s58">0000FF</span></p>
+<p class="p14">plotting.graphcolor.01 = #<span class="s27">FF0000</span></p>
+<p class="p14">plotting.graphcolor.02 = #<span class="s59">009900</span></p>
+<p class="p14">plotting.graphcolor.03 = #<span class="s60">FF9900</span></p>
+<p class="p14">plotting.graphcolor.04 = #<span class="s61">CC00CC</span></p>
+<p class="p14">plotting.graphcolor.05 = #<span class="s62">666666</span></p>
+<p class="p14">plotting.graphcolor.06 = #<span class="s63">00CCFF</span></p>
+<p class="p14">plotting.graphcolor.07 = #<span class="s20">000000</span></p>
+<p class="p32"><br></p>
+<p class="p14"># GUI - LINESTATUS</p>
+<p class="p64"><span class="s20">linestatus.color = #</span><span class="s48">ffffff - White - Bacground added for clarity</span></p>
+<p class="p14">linestatus.bgcolor = #<span class="s55">006468</span></p>
+<p class="p32"><br></p>
+<p class="p14"># EDITOR - DETAILS</p>
+<p class="p32"><br></p>
+<p class="p14"># foreground and background colors<span class="Apple-converted-space"> </span></p>
+<p class="p14">editor.fgcolor = #000000<span class="Apple-tab-span">	</span></p>
+<p class="p14">editor.bgcolor = #<span class="s19">ffffff - White<span class="Apple-converted-space"> </span></span></p>
+<p class="p32"><br></p>
+<p class="p14"># highlight for the current line</p>
+<p class="p14">editor.linehighlight.color=#<span class="s64">e2e2e2</span> <span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p14"># highlight for the current line</p>
+<p class="p14">editor.linehighlight=true<span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p14"># caret blinking and caret color</p>
+<p class="p14">editor.caret.color = #<span class="s65">333300</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p14"># color to be used for background when 'external editor' enabled<span class="Apple-converted-space"> </span></p>
+<p class="p14">editor.external.bgcolor = #<span class="s66">c8d2dc</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p14"># selection color <span class="Apple-converted-space"> </span></p>
+<p class="p14">editor.selection.color = #<span class="s67">ffcc00</span><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p32"><br></p>
+<p class="p14"># area thats not in use by the text (replaced with tildes)</p>
+<p class="p14">editor.invalid.style = #<span class="s68">7e7e7e</span>,bold</p>
+<p class="p32"><br></p>
+<p class="p14"># little pooties at the end of lines that show where they finish</p>
+<p class="p14">editor.eolmarkers = false</p>
+<p class="p14">editor.eolmarkers.color = #<span class="s69">999999</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p14"># bracket/brace highlighting</p>
+<p class="p14">editor.brackethighlight = true</p>
+<p class="p14">editor.brackethighlight.color = #<span class="s70">006699</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p32"><br></p>
+<p class="p14"># TEXT - KEYWORDS <span class="Apple-converted-space">                         </span></p>
+<p class="p32"><br></p>
+<p class="p14"># FUNCTIONS <span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p14">editor.keyword1.style = #<span class="s15">d35400</span>,bold<span class="Apple-tab-span">	</span></p>
+<p class="p14">editor.data_type.style = #<span class="s15">d35400</span>,bold<span class="Apple-converted-space"> <span class="Apple-tab-span">	</span></span></p>
+<p class="p32"><br></p>
+<p class="p14"># METHODS <span class="Apple-converted-space">   <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p14">editor.keyword2.style = #<span class="s15">D35400</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p14">editor.function.style = #<span class="s15">d35400</span>,plain<span class="Apple-converted-space"> <span class="Apple-tab-span">	</span></span></p>
+<p class="p32"><br></p>
+<p class="p14"># STRUCTURES <span class="Apple-converted-space">   <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p14">editor.keyword3.style = #<span class="s25">5E6D03</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p14">editor.reserved_word.style = #<span class="s25">5E6D03</span>,plain<span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p32"><br></p>
+<p class="p32"><br></p>
+<p class="p14"># TEXT - LITERALS</p>
+<p class="p14">editor.literal1.style = #<span class="s13">00979C</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p14">editor.literal2.style = #<span class="s13">00979C</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p14">editor.variable.style = #<span class="s13">00979C</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p14">editor.reserved_word_2.style = #<span class="s13">00979C</span>,plain <span class="Apple-tab-span">	</span><span class="Apple-converted-space"> </span></p>
+<p class="p14">editor.literal_boolean.style = #<span class="s13">00979C</span>,bold<span class="Apple-converted-space"> </span></p>
+<p class="p14">editor.literal_char.style = #<span class="s13">00979C</span>,plain<span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span></p>
+<p class="p14">editor.literal_string_double_quote.style = #<span class="s71">F44336</span>,plain</p>
+<p class="p14">editor.preprocessor.style = #<span class="s25">5E6D03</span>,plain</p>
+<p class="p32"><br></p>
+<p class="p14"># http://www.arduino.cc/ - GET RID OF UNDERLINE!</p>
+<p class="p14">editor.url.style = #<span class="s58">0000ff</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p14"># e.g. + - = /</p>
+<p class="p14">editor.operator.style = #<span class="s36">434f54</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p32"><br></p>
+<p class="p14"># ?? maybe this is for words followed by a colon</p>
+<p class="p14"># like in case statements or goto</p>
+<p class="p14">editor.label.style = #<span class="s68">7e7e7e</span>,bold</p>
+<p class="p32"><br></p>
+<p class="p32"><br></p>
+<p class="p14"># TEXT - COMMENTS</p>
+<p class="p14">editor.comment1.style = #<span class="s36">434F54</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p14">editor.comment2.style = #<span class="s37">95a5a6</span>,plain<span class="Apple-tab-span">	</span></p>
+<p class="p32"><br></p>
+<p class="p32"><br></p>
+<p class="p14"># LINE STATUS - editor line number status bar at the bottom of the screen</p>
+<p class="p14">linestatus.font<span class="Apple-tab-span">	</span> <span class="Apple-converted-space">  </span>= SansSerif,plain,10</p>
+<p class="p14">linestatus.height<span class="Apple-converted-space">  </span>= 20</p>
+</body>
+</html>
