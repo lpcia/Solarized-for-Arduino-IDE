@@ -1,6 +1,6 @@
 ## Arduino IDE Solarized!!!  
 
-My attempt at Solarizing the Arduino IDE  (The rtf file has all my notes.)
+My attempt at Solarizing the Arduino IDE  (The rtf file has all my notes including tips for the dark version)
 
 ![Result](doc/example1.png)
 
