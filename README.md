@@ -52,16 +52,16 @@ These are the changes to theme.txt
 
 ## Further Reading:
 
-####The Official Solarized Website:
+#### The Official Solarized Website:
 https://ethanschoonover.com/solarized/
 
-####Official Arduino Documentation
+#### Official Arduino Documentation
 https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification#keywords
 
-####Helpful
+#### Helpful
 http://www.eclipsecolorthemes.org/?view=theme&id=9807
 https://en.wikipedia.org/wiki/Solarized_(color_scheme) (Swiped Chart from Here)
 
-####Interesting Reading:  
+#### Interesting Reading:  
 A case against Syntax Highlighting: http://www.linusakesson.net/programming/syntaxhighlighting/
 	
