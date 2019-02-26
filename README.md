@@ -35,8 +35,6 @@ These are the only changes to theme.txt
 	
 	128 editor.comment1.style = #434F54,plain			// A9A9A9
 	129 editor.comment2.style = #95a5a6,plain			// C0C0C0
-	
-	* Denotes Fields suggested for Developers in their keywords.txt
 
 ## Further Reading:
 
